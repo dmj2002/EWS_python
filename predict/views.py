@@ -10,7 +10,7 @@ from predict import service
 # Create your views here.
 def index(request):
     return HttpResponse("Hello")
-@csrf_exempt
+# @csrf_exempt
 def train(request):
     if request.method == 'POST':
         data = json.loads(request.body)
